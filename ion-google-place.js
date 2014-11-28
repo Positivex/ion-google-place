@@ -89,7 +89,7 @@ angular.module('ion-google-place', [])
                         console.log(err);
                      });
                   }
-   
+
                    // Update scope location using prediction selected by user
                   scope.selectLocation = function (prediction) {
                      var promise = scope.getDetails(prediction);
@@ -111,8 +111,8 @@ angular.module('ion-google-place', [])
                      searchEventTimeout = $timeout(function () {
                         if (!query) return;
                         if (query.length < 3) return;
-                        var queryObject = { 
-                           input: query, 
+                        var queryObject = {
+                           input: query,
                            types: ['geocode']
                         };
                         if(scope.currentLocation != undefined) {
