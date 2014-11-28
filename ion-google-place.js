@@ -38,6 +38,9 @@ angular.module('ion-google-place', [])
                   '<ion-item ng-repeat="location in locations" type="item-text-wrap" ng-click="selectLocation(location)">',
                   '{{location.description}}',
                   '</ion-item>',
+                  '<ion-item ng-show="locations.length > 0">',
+                  '<div class="disclamer"><img ng-src="https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white2.png"></div>',
+                  '</ion-item>',
                   '</ion-list>',
                   '</ion-content>',
                   '</div>'
